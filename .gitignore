@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 训练产物
+runs/
+weights/
+*.pt
+*.onnx
+*.engine
+*.torchscript
+
+# 演示数据与本地数据
+demo_data/
+datasets/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 本地安装包缓存（离线安装 torch 用，不入库）
+.wheels/
