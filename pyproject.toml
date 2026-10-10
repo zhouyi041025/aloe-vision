@@ -21,6 +21,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0", "ruff>=0.4"]
+bench = ["thop>=0.1.1"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -30,13 +31,10 @@ pythonpath = ["src"]
 testpaths = ["tests"]
 addopts = "-q"
 markers = [
-    "slow: 端到端训练冒烟测试（本机手动运行，CI 默认排除）",
+    "slow: 慢速集成测试（含端到端训练/推理冒烟），本机手动运行，CI 默认排除",
 ]
 filterwarnings = [
     "ignore::DeprecationWarning",
-]
-markers = [
-    "slow: 慢速集成测试（含训练/推理冒烟），CI 默认跳过",
 ]
 
 [tool.ruff]
