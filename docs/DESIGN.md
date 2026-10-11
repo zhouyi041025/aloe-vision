@@ -13,6 +13,10 @@
 - 训练：预训练权重迁移学习；检测 300 epochs / batch 32；分割 300 epochs / batch 16；
   SGD（lr0=0.01，momentum=0.937，weight_decay=5e-4）；Mosaic（+MixUp）增强。
 
+![自建数据集的炭疽病病株样本](assets/dataset_lesion_example.png)
+
+*图：自建芦荟炭疽病数据集的病株样本（叶片上的黄褐色病斑；来自项目结题材料）*
+
 ## 2. AloeDet：检测与计数
 
 ### 2.1 MCA 多维协作注意力（骨干末端）
